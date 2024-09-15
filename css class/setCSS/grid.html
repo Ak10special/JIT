@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gridContainer {
+       display: grid;
+        grid-template-columns: repeat(4, 1fr) minmax(100px, 1fr);
+        column-gap: 20px;
+        row-gap: 15px;
+        
+    }
+    .gridItem {
+        height: 150px;
+    }
+    .red {
+        background-color: red;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .green {
+        background-color: green;
+    }
+    .yellow {
+        background-color: yellow;
+    } 
+    </style>
+<body>
+    <div class="gridContainer">
+        <div class="gridItem red"></div>
+        <div class="gridItem blue"></div>
+        <div class="gridItem green"></div>
+        <div class="gridItem yellow"></div>
+    </div>
+</body>
+</html>

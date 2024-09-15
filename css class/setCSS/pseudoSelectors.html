@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flexContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        padding: 10px 47.4px;
+        background-color: yellow;
+        border: 1px solid yellow;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 100px;
+        cursor: pointer;
+        transition: 1s ease;
+    }
+    .btn:hover {
+        background-color: white;
+        color: yellow;
+    }
+    .btn:active {
+        background-image: url(sportCar2.jpg);
+        background-size: 100px;
+    }
+    input {
+        padding: 5px 8px;
+        font-size: 1.2rem;
+        border: 1px solid yellow;
+        color: yellow;
+        height: 100px;
+        transition: 5s ease;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    input:focus {
+        outline: none;
+        border: 2px solid yellow;
+    }
+    input:hover {
+        background-color: yellow;
+        border: 1px solid yellow;
+        color: white;
+    }
+    input:disabled{
+        background-color: yellow;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+</style>
+<body>
+    <div class="flexContainer">
+        <button class="btn">Hey, Click me!</button>
+        <input type="text" maxlength="20" min="5">
+        <input type="text" disabled>
+
+        <h1>DLHS 2K26 PLAYERS</h1>
+        <ul>
+            <li>Emmanuel</li>
+            <li>David</li>
+            <li>Solomon</li>
+            <li>Tunmise</li>
+            <li>Michael</li>
+        </ul>
+    </div>
+</body>
+<style>
+    h1 {
+        color: yellow;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        border: 1px solid yellow; 
+        width: 400px;
+        font-family: Arial;
+        background-color: white;
+        color: yellow;
+    }
+    
+    li {
+        padding: 5px 10px;
+        transition: 1s ease;
+    }
+   /* li:first-child {
+        background-color: yellow;
+    }
+    li:last-child {
+        background-color: yellow;
+    } */
+    li:nth-child(2n+1) {
+        background-color: yellow;
+        color: white;
+        transition: 1s ease;
+    }
+    li:nth-child(2n+1):hover {
+        background-color: rgb(219, 219, 100) ;
+        color: rgb(228, 228, 69);
+    }
+    li:hover {
+        background-color: rgb(219, 219, 100);
+        color: white;
+    }
+</style>
+</html>

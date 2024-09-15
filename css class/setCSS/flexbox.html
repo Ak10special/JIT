@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexItem {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+} 
+</style>
+<body>
+    <div class="flexContainer">
+        <div class="flexItem red" style="flex: 2;"></div>
+        <div class="flexItem blue" style="height: 200px;   flex:1;"></div>
+        <div class="flexItem green" style="height: 250px;  flex:2;"></div>
+        <div class="flexItem yellow" style="height: 300px; flex:1;"></div>
+    </div>
+</body>
+</html>
